@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil & Kontak</title>
+
+  <!-- Font Awesome terbaru -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1f2937;
+      padding: 12px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      padding: 6px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    nav a.active {
+      background-color: #3b82f6;
+    }
+
+    /* Profil Section */
+    .profile-container {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .profile-container img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 4px solid #3b82f6;
+    }
+    .profile-container h1 {
+      font-size: 24px;
+      margin: 5px 0;
+      color: #111827;
+    }
+    .profile-container p {
+      font-size: 14px;
+      color: #374151;
+      margin-bottom: 15px;
+    }
+    .btn {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #2563eb;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .social-icons a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #1f2937;
+      color: white;
+      border-radius: 50%;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+    .social-icons a:hover {
+      background: #3b82f6;
+    }
+
+    /* Kontak Section */
+    .container {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 15px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card i {
+      font-size: 24px;
+      color: #3b82f6;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 5px;
+      padding: 8px 15px;
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .card a:hover {
+      background: #2563eb;
+    }
+
+    /* Sembunyikan section */
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a id="menu-profil" class="active">Profil</a>
+    <a id="menu-kontak">Kontak</a>
+  </nav>
+
+  <!-- Profil -->
+  <section id="profil-section">
+    <div class="profile-container">
+      <!-- Ganti dengan link gambar online supaya tampil di HP -->
+      <img src="C:\Users\Hype AMD\OneDrive\Pictures\foto-propil.jpg" alt="Foto Profil">
+      <h1>PADILLAH RAMADAN SIREGAR</h1>
+      <p>Mahasiswa Teknik Informatika | Passionate in App, Web & Game Development | Future Tech Creator</p>
+
+      <a href="mailto:padillahramadansiregar@gmail.com" class="btn">Hubungi Saya</a>
+      <a href="CV.pdf" class="btn">Unduh CV</a>
+
+      <div class="social-icons">
+        <a href="https://instagram.com/sfadillah10" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/username" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://facebook.com/username" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://t.me/username" target="_blank"><i class="fab fa-telegram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak-section" class="hidden">
+    <div class="container">
+      <h2>Informasi Kontak</h2>
+      <div class="card">
+        <i class="fas fa-phone"></i>
+        <h3>Telepon</h3>
+        <p>+62 85188042374</p>
+        <a href="https://wa.me/62851-8804-2374" target="_blank">Chat WhatsApp</a>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-envelope"></i>
+        <h3>E-mail</h3>
+        <p>padillahramadansiregar@gmail.com</p>
+        <a href="mailto:padillahramadansiregar@gmail.com">Kirim Email</a>
+      </div>
+
+      <div class="card">
+        <i class="fab fa-linkedin"></i>
+        <h3>LinkedIn</h3>
+        <a href="https://linkedin.com/in/padillah" target="_blank">
+          Lihat Profil LinkedIn
+        </a>
+      </div>
+
+      <div class="card">
+        <i class="fab fa-github"></i>
+        <h3>GitHub</h3>
+        <a href="https://github.com/gina-divst" target="_blank">
+          Lihat Repositori GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Ambil elemen
+    const menuProfil = document.getElementById("menu-profil");
+    const menuKontak = document.getElementById("menu-kontak");
+    const profilSection = document.getElementById("profil-section");
+    const kontakSection = document.getElementById("kontak-section");
+
+    // Event klik menu profil
+    menuProfil.addEventListener("click", () => {
+      profilSection.classList.remove("hidden");
+      kontakSection.classList.add("hidden");
+      menuProfil.classList.add("active");
+      menuKontak.classList.remove("active");
+    });
+
+    // Event klik menu kontak
+    menuKontak.addEventListener("click", () => {
+      kontakSection.classList.remove("hidden");
+      profilSection.classList.add("hidden");
+      menuKontak.classList.add("active");
+      menuProfil.classList.remove("active");
+    });
+  </script>
+
+</body>
+</html>
